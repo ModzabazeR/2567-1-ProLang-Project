@@ -1,0 +1,12 @@
+A + B
+-
+*
+if
+then
+id1
+id2
+id1
+"Hello World";
+/* comment */
+2
+// comment
