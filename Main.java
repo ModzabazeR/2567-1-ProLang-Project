@@ -9,7 +9,7 @@ public class Main {
             while(!lexer.yyatEOF()) {
                 lexer.yylex();
             }
-            System.err.println(lexer.symbolTable);
+            System.out.println(lexer.symbolTable);
 
             lexer.yyclose();
 
