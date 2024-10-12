@@ -97,8 +97,8 @@ public class Lexer {
 
   private static final String ZZ_ACTION_PACKED_0 =
     "\1\0\1\1\1\2\1\1\1\3\4\4\2\5\1\6"+
-    "\1\4\11\7\1\10\1\0\1\11\1\0\1\12\1\13"+
-    "\7\7\1\0\7\7\1\12\3\7";
+    "\1\4\11\7\1\10\1\0\1\11\1\0\1\2\1\12"+
+    "\7\7\1\0\7\7\1\2\3\7";
 
   private static int [] zzUnpackAction() {
     int [] result = new int[47];
@@ -676,62 +676,57 @@ public class Lexer {
 	System.exit(1);
             }
           // fall through
-          case 12: break;
+          case 11: break;
           case 2:
             { continue;
             }
           // fall through
-          case 13: break;
+          case 12: break;
           case 3:
             { System.out.println("parenthesis: " + yytext());
             }
           // fall through
-          case 14: break;
+          case 13: break;
           case 4:
             { System.out.println("operator: " + yytext());
             }
           // fall through
-          case 15: break;
+          case 14: break;
           case 5:
             { System.out.println("integer: " + yytext());
             }
           // fall through
-          case 16: break;
+          case 15: break;
           case 6:
             { System.out.println("semicolon: " + yytext());
             }
           // fall through
-          case 17: break;
+          case 16: break;
           case 7:
             { System.out.println("identifier: " + yytext()); 
-		if (!symbolTable.contains(yytext())) {
-			symbolTable.add(yytext());
-		} else {
-			System.out.printf("identifier \"%s\" already in symbol table%n", yytext());
-		}
+	if (!symbolTable.contains(yytext())) {
+		symbolTable.add(yytext());
+	} else {
+		System.out.printf("identifier \"%s\" already in symbol table%n", yytext());
+	}
             }
           // fall through
-          case 18: break;
+          case 17: break;
           case 8:
             { System.out.print(yytext());
             }
           // fall through
-          case 19: break;
+          case 18: break;
           case 9:
             { System.out.println("string: " + yytext());
             }
           // fall through
-          case 20: break;
+          case 19: break;
           case 10:
-            { System.out.println("comment: " + yytext());
-            }
-          // fall through
-          case 21: break;
-          case 11:
             { System.out.println("keyword: " + yytext());
             }
           // fall through
-          case 22: break;
+          case 20: break;
           default:
             zzScanError(ZZ_NO_MATCH);
         }

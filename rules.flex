@@ -33,14 +33,14 @@ NewLine = [\n\r\s]+
 {Integers} { System.out.println("integer: " + yytext()); }
 {Strings} { System.out.println("string: " + yytext()); }
 {Identifiers} {
-		System.out.println("identifier: " + yytext()); 
-		if (!symbolTable.contains(yytext())) {
-			symbolTable.add(yytext());
-		} else {
-			System.out.printf("identifier \"%s\" already in symbol table%n", yytext());
-		}
+	System.out.println("identifier: " + yytext()); 
+	if (!symbolTable.contains(yytext())) {
+		symbolTable.add(yytext());
+	} else {
+		System.out.printf("identifier \"%s\" already in symbol table%n", yytext());
 	}
-{Comments} { System.out.println("comment: " + yytext()); }
+}
+{Comments} { continue; }
 {NewLine} { continue; }
 
 . { 

@@ -1,0 +1,59 @@
+A + B
+X - Y
+P * Q
+M / N
+A == B
+C++ 
+D--
+A >= B
+X <= Y
+
+(A + B) * (C - D);
+(X / Y) + Z;
+if (X > Y) then;
+    A = B;
+endif;
+while (A < 10) do;
+    A++;
+endwhile;
+
+if (A > B) then
+    print "A is greater than B";
+else
+    print "A is not greater than B";
+endif;
+while (X <= 100) do
+    X = X + 1;
+    print "In loop";
+endwhile;
+newline;
+read;
+
+A = 123;
+B = 45678;
+C = 99999;
+D = 0;
+E = 1;
+
+var1 = 10;
+var2 = var1 + 20;
+result = var2 * 2;
+id1 = 100;
+id2 = id1 + 50;
+id1
+id3 = var2;
+
+str1 = "Hello";
+str2 = "World!";
+message = "This is a test string";
+greeting = "Good Morning!";
+print "Output: " + message;
+
+A @ B;
+X = 10;
+Y = #20;
+if (A < B) then;
+    A++;
+else;
+    &A = B;
+endif;
